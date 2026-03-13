@@ -57,10 +57,13 @@ def option3():
 
         for producto, precio, cantidad in data_base:
 
-            print(f"NOMBRE DEL PRODUCTO: {producto}")
-            print(f"PRECIO DEL PRODUCTO: {precio}")
-            print(f"CANTIDAD DEL PRODUCTO: {cantidad}")
-            print(f"Valor toral: {cantidad * precio}")
+            print (f"NOMBRE DEL PRODUCTO: {producto}")
+            print ("------------------------------")
+            print (f"PRECIO DEL PRODUCTO: {precio}")
+            print ("-------------------------------")
+            print (f"CANTIDAD DEL PRODUCTO: {cantidad}")
+            print ("-------------------------------")
+            print (f"Valor toral: {cantidad * precio}")
             valortotal = cantidad * precio
             valorgeneral += valortotal
             
@@ -85,7 +88,7 @@ def menu():
     inicio()
 
     while opcion !=3:
-        opcion = pedirNumero("DIgite el numero de la opcion: ", "int")
+        opcion = pedirNumero("ENTER THE OPTION NUMBER: ", "int")
 
         if opcion == 1:
           option1()
@@ -97,4 +100,5 @@ def menu():
         option3()  
 
 menu()
+
 
