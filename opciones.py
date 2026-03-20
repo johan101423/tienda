@@ -65,3 +65,5 @@ def option3():
             
         print(f"GENERAL VALUE {valorgeneral}")        
        
+def option4 () :
+     print("Exit")
